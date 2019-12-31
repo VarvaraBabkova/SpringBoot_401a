@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class HomeController {
+
     @RequestMapping("/")
     public String index(){
         return "index";
@@ -15,8 +16,8 @@ public class HomeController {
         return "login";
     }
 
-    @RequestMapping("/admin")
+    @RequestMapping("/secure")
     public String admin(){
-        return "admin";
+        return "secure";
     }
 }
